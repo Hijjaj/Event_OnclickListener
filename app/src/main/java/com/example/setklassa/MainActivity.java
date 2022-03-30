@@ -2,7 +2,6 @@ package com.example.setklassa;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         b.putString("a",nama.trim());
         b.putString("b",password.trim());
 
-        Intent i = new Intent(getApplicationContext(),ActivityHasil.class);
+        Intent i = new Intent(getApplicationContext(),Home_Activity.class);
         i.putExtras(b);
 
         startActivity(i);
